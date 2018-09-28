@@ -1,0 +1,11 @@
+/Users/mariusfagerhol/Desktop/Software-design/Arbeidskrav/Project/obj/Debug/netcoreapp2.1/Project.csprojAssemblyReference.cache
+/Users/mariusfagerhol/Desktop/Software-design/Arbeidskrav/Project/obj/Debug/netcoreapp2.1/Project.csproj.CoreCompileInputs.cache
+/Users/mariusfagerhol/Desktop/Software-design/Arbeidskrav/Project/obj/Debug/netcoreapp2.1/Project.AssemblyInfoInputs.cache
+/Users/mariusfagerhol/Desktop/Software-design/Arbeidskrav/Project/obj/Debug/netcoreapp2.1/Project.AssemblyInfo.cs
+/Users/mariusfagerhol/Desktop/Software-design/Arbeidskrav/Project/bin/Debug/netcoreapp2.1/Project.deps.json
+/Users/mariusfagerhol/Desktop/Software-design/Arbeidskrav/Project/bin/Debug/netcoreapp2.1/Project.runtimeconfig.json
+/Users/mariusfagerhol/Desktop/Software-design/Arbeidskrav/Project/bin/Debug/netcoreapp2.1/Project.runtimeconfig.dev.json
+/Users/mariusfagerhol/Desktop/Software-design/Arbeidskrav/Project/bin/Debug/netcoreapp2.1/Project.dll
+/Users/mariusfagerhol/Desktop/Software-design/Arbeidskrav/Project/bin/Debug/netcoreapp2.1/Project.pdb
+/Users/mariusfagerhol/Desktop/Software-design/Arbeidskrav/Project/obj/Debug/netcoreapp2.1/Project.dll
+/Users/mariusfagerhol/Desktop/Software-design/Arbeidskrav/Project/obj/Debug/netcoreapp2.1/Project.pdb
