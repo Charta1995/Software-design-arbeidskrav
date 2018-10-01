@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mariusfagerhol/Desktop/Software-design/Arbeidskrav/Project/Project.csproj",
+      "projectUniqueName": "/Users/mariusfagerhol/Desktop/Software-design-arbeidskrav/Arbeidskrav/Project/Project.csproj",
       "projectName": "Project",
-      "projectPath": "/Users/mariusfagerhol/Desktop/Software-design/Arbeidskrav/Project/Project.csproj",
+      "projectPath": "/Users/mariusfagerhol/Desktop/Software-design-arbeidskrav/Arbeidskrav/Project/Project.csproj",
       "packagesPath": "/Users/mariusfagerhol/.nuget/packages/",
-      "outputPath": "/Users/mariusfagerhol/Desktop/Software-design/Arbeidskrav/Project/obj/",
+      "outputPath": "/Users/mariusfagerhol/Desktop/Software-design-arbeidskrav/Arbeidskrav/Project/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
