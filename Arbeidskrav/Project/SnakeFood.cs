@@ -18,6 +18,7 @@ class SnakeFood {
 						break;
 					}
 				if (spot) {
+                    mySetup.InUse = true;
 					Console.ForegroundColor = ConsoleColor.Green; 
 					Console.SetCursorPosition(mySetup.AppPoint.X, mySetup.AppPoint.Y); 
 					Console.Write("$");

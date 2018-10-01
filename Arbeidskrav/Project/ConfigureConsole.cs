@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
 
-class GameIsNotOver {
+class ConfigureConsole {
 
-    public GameIsNotOver(){}
+    public ConfigureConsole(){}
 
     public void ConfigureConsoleAndSnake(Setup mySetup) {
         if (!mySetup.GameOver) {
@@ -16,10 +16,8 @@ class GameIsNotOver {
 				Console.SetCursorPosition(mySetup.MySnakeTail.X, mySetup.MySnakeTail.Y); 
 				Console.Write(" ");
 			} else {
-				Console.ForegroundColor = ConsoleColor.Green; 
-				Console.SetCursorPosition(mySetup.AppPoint.X, mySetup.AppPoint.Y); 
-				Console.Write("$");
-				mySetup.InUse = false;
+				 mySetup.InUse = false;
+				
 			}
 			mySetup.MySnake.Add(mySetup.MySnakeHeight);
 			Console.ForegroundColor = ConsoleColor.Yellow; 

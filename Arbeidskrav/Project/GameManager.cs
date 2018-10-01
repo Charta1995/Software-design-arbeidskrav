@@ -9,15 +9,15 @@ class GameManager {
 
     private GameNotPaused gameNotPaused;
 
-    private GameIsNotOver gameIsNotOver;
+    private ConfigureConsole gameIsNotOver;
     private Setup mySetup;
 
     public GameManager() {
         this.MySetup = new Setup();
-        this.snakeFood = new SnakeFood();
+        this.MySnakeFood = new SnakeFood();
         this.MyKeyScanner = new KeyScanner();
         this.TheGameIsRunning = new GameNotPaused();
-        this.gameIsNotOver = new GameIsNotOver();
+        this.TheGameIsNotOver = new ConfigureConsole();
     }
 
     public void initializeGame() {
@@ -36,7 +36,7 @@ class GameManager {
                 mySetup.initializeSnakeAttributes();
 
                 this.TheGameIsRunning.SetDirections(MySetup);
-                this.TheGameIsRunning.CheckIfGameOverAndNewFoodPosition(MySetup);
+                this.TheGameIsRunning.CheckIfGameOverAndNewFoodPosition(MySetup, this);
 
                 this.TheGameIsRunning.ConfigureSnakeAndCheckIfEatenItself(MySetup);
                 this.TheGameIsNotOver.ConfigureConsoleAndSnake(MySetup);
@@ -85,7 +85,7 @@ class GameManager {
         }
     }
 
-    public GameIsNotOver TheGameIsNotOver {
+    public ConfigureConsole TheGameIsNotOver {
         get {
             return this.gameIsNotOver;
         }
