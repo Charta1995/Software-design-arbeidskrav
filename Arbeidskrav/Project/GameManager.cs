@@ -7,17 +7,20 @@ class GameManager {
     private SnakeFood snakeFood;
     private KeyScanner keyScanner;
 
-    private GameNotPaused gameNotPaused;
+    private DirectionChecker directionChecker;
 
-    private ConfigureConsole gameIsNotOver;
+    private ConfigureConsole configureConsole;
     private Setup mySetup;
+
+    private GameOver gameOver;
 
     public GameManager() {
         this.MySetup = new Setup();
         this.MySnakeFood = new SnakeFood();
         this.MyKeyScanner = new KeyScanner();
-        this.TheGameIsRunning = new GameNotPaused();
-        this.TheGameIsNotOver = new ConfigureConsole();
+        this.TheDirectionChecker = new DirectionChecker();
+        this.TheConfigureConsole = new ConfigureConsole();
+        this.MyGameOver = new GameOver();
     }
 
     public void initializeGame() {
@@ -35,11 +38,12 @@ class GameManager {
                 mySetup.MyStopWatch.Restart();
                 mySetup.initializeSnakeAttributes();
 
-                this.TheGameIsRunning.SetDirections(MySetup);
-                this.TheGameIsRunning.CheckIfGameOverAndNewFoodPosition(MySetup, this);
+                this.TheDirectionChecker.SetDirections(MySetup);
 
-                this.TheGameIsRunning.ConfigureSnakeAndCheckIfEatenItself(MySetup);
-                this.TheGameIsNotOver.ConfigureConsoleAndSnake(MySetup);
+                this.MyGameOver.CheckIfGameOverAndNewFoodPosition(mySetup, this);
+                this.MyGameOver.ConfigureSnakeAndCheckIfEatenItself(mySetup);
+
+                this.TheConfigureConsole.ConfigureConsoleAndSnake(MySetup);
             }
         }
     }
@@ -75,23 +79,33 @@ class GameManager {
         }
     }
 
-    public GameNotPaused TheGameIsRunning {
+    public DirectionChecker TheDirectionChecker {
         get {
-            return this.gameNotPaused;
+            return this.directionChecker;
         }
 
         private set {
-            this.gameNotPaused = value;
+            this.directionChecker = value;
         }
     }
 
-    public ConfigureConsole TheGameIsNotOver {
+    public ConfigureConsole TheConfigureConsole {
         get {
-            return this.gameIsNotOver;
+            return this.configureConsole;
         }
 
         private set {
-            this.gameIsNotOver = value;
+            this.configureConsole = value;
+        }
+    }
+
+    public GameOver MyGameOver {
+        get {
+            return this.gameOver;
+        }
+
+        private set {
+            this.gameOver = value;
         }
     }
 

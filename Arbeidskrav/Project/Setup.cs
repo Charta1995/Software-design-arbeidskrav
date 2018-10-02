@@ -7,7 +7,7 @@ class Setup {
 
     private bool gameOver;
     private bool gamePause;
-    private bool inUse;
+    private bool freeMovementSpace;
 
     private short newDirection;
     private short lastDirection;
@@ -22,7 +22,7 @@ class Setup {
 
     private Point snakeHead;
 
-    private Point snakeHeight;
+    private Point newSnakeHead;
 
 
     public Setup() {
@@ -32,7 +32,7 @@ class Setup {
     private void initializeStandardValues() {
         GameOver = false;
         GamePause = false;
-        InUse = false;
+        FreeMovementSpace = true;
 
         NewDirection = (short) Direction.Down;
         LastDirection = NewDirection;
@@ -67,7 +67,7 @@ class Setup {
     public void initializeSnakeAttributes() {
         this.MySnakeHead = new Point(this.MySnake.Last());
         this.MySnakeTail = new Point(this.MySnake.First());
-        this.MySnakeHeight = new Point(this.MySnakeHead);
+        this.MyNewSnakeHead = new Point(this.MySnakeHead);
     }
 
     public bool GameOver {
@@ -90,13 +90,13 @@ class Setup {
         }
     }
 
-    public bool InUse {
+    public bool FreeMovementSpace {
         get {
-            return this.inUse;
+            return this.freeMovementSpace;
         }
 
         set {
-            this.inUse = value;
+            this.freeMovementSpace = value;
         }
     }
 
@@ -180,13 +180,13 @@ class Setup {
         }
     }
 
-    public Point MySnakeHeight {
+    public Point MyNewSnakeHead {
         get {
-            return this.snakeHeight;
+            return this.newSnakeHead;
         }
 
         private set {
-            this.snakeHeight = value;
+            this.newSnakeHead = value;
         }
     }
 

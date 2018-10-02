@@ -14,14 +14,14 @@ class KeyScanner {
 				mySetup.GameOver = true;
 			else if (cki.Key == ConsoleKey.Spacebar)
 				mySetup.GamePause = !mySetup.GamePause;
-			else if (cki.Key == ConsoleKey.UpArrow && mySetup.LastDirection != 2)
-				mySetup.NewDirection = 0;
-			else if (cki.Key == ConsoleKey.RightArrow && mySetup.LastDirection != 3)
-				mySetup.NewDirection = 1;
-			else if (cki.Key == ConsoleKey.DownArrow && mySetup.LastDirection != 0)
-				mySetup.NewDirection = 2;
+			else if (cki.Key == ConsoleKey.UpArrow && mySetup.LastDirection != (int) Direction.Down)
+				mySetup.NewDirection = (int) Direction.Up;
+			else if (cki.Key == ConsoleKey.RightArrow && mySetup.LastDirection != (int) Direction.Left)
+				mySetup.NewDirection = (int) Direction.Right;
+			else if (cki.Key == ConsoleKey.DownArrow && mySetup.LastDirection != (int) Direction.Up)
+				mySetup.NewDirection = (int) Direction.Down;
 			else if (cki.Key == ConsoleKey.LeftArrow && mySetup.LastDirection != 1)
-				mySetup.NewDirection = 3;
+				mySetup.NewDirection = (int) Direction.Left;
 		}
     }
 

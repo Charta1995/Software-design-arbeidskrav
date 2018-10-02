@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
 
-namespace SnakeMess
+namespace Snake
 {
 	
-	class SnakeMess
+	class Snake
 	{
 		public static void Main(string[] arguments)
 		{

@@ -5,23 +5,22 @@ using System.Diagnostics;
 
 class ConfigureConsole {
 
-    public ConfigureConsole(){}
+    public ConfigureConsole() {}
 
     public void ConfigureConsoleAndSnake(Setup mySetup) {
         if (!mySetup.GameOver) {
 			Console.ForegroundColor = ConsoleColor.Yellow;
 			Console.SetCursorPosition(mySetup.MySnakeHead.X, mySetup.MySnakeHead.Y); 
 			Console.Write("0");
-			if (!mySetup.InUse) {
+			if (mySetup.FreeMovementSpace) {
 				Console.SetCursorPosition(mySetup.MySnakeTail.X, mySetup.MySnakeTail.Y); 
 				Console.Write(" ");
 			} else {
-				 mySetup.InUse = false;
-				
+				mySetup.FreeMovementSpace = true;
 			}
-			mySetup.MySnake.Add(mySetup.MySnakeHeight);
+			mySetup.MySnake.Add(mySetup.MyNewSnakeHead);
 			Console.ForegroundColor = ConsoleColor.Yellow; 
-			Console.SetCursorPosition(mySetup.MySnakeHeight.X, mySetup.MySnakeHeight.Y); 
+			Console.SetCursorPosition(mySetup.MyNewSnakeHead.X, mySetup.MyNewSnakeHead.Y); 
 			Console.Write("@");
 			mySetup.LastDirection = mySetup.NewDirection;
 		}
