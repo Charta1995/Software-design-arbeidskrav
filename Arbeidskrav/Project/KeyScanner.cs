@@ -6,7 +6,10 @@ using System.Diagnostics;
 class KeyScanner {
 
     public KeyScanner(){}
-
+	///<summary>
+	///Observerer etter piltast klikk og konfiguerer enten tilstanden på spillet til game over eller pause
+	///om escape eller mellomrom ble klikket på, ellers så endres den nye direksjonen til piltast klikk.
+	///</summary>
     public void ScanForKeys(Setup mySetup) {
         if (Console.KeyAvailable) {
 			ConsoleKeyInfo cki = Console.ReadKey(true);

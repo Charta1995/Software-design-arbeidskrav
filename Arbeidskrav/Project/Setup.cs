@@ -29,6 +29,9 @@ class Setup {
         initializeStandardValues();
     }
 
+    ///<summary>
+    ///Initialiserer variabler og oppretter objekter til denne klassen.
+    ///</summary>
     private void initializeStandardValues() {
         GameOver = false;
         GamePause = false;
@@ -44,13 +47,19 @@ class Setup {
         initConsole();
     }
 
+    ///<summary>
+    ///Oppretter slange kroppen
+    ///</summary>
     private void addItemsToSnake() {
         this.mySnake.Add(new Point(10, 10));
         this.mySnake.Add(new Point(10, 10));
         this.mySnake.Add(new Point(10, 10));
         this.mySnake.Add(new Point(10, 10));
     }
-
+    
+    ///<summary>
+    //Konfiguerer spill vinduet og laget slange hodet.
+    ///</summary>
     private void initConsole() {
         Console.CursorVisible = false;
         Console.Title = "Arbeidskrav";

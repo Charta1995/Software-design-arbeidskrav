@@ -6,7 +6,10 @@ using System.Diagnostics;
 class DirectionChecker {
 
     public DirectionChecker(){}
-
+	/*
+		Tar i mot mySetup klassen for å sjekke hvilken direksjon som du valgte ved å klikke på piltastene,
+		og snur slangen ettersom.
+	*/
     public void SetDirections(Setup mySetup) {
         switch (mySetup.NewDirection) {
 			case 0:
