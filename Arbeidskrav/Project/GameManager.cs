@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
 
-class GameManager {
+class GameManager
+{
     private SnakeFood snakeFood;
     private KeyScanner keyScanner;
 
@@ -14,7 +15,8 @@ class GameManager {
 
     private GameOver gameOver;
 
-    public GameManager() {
+    public GameManager()
+    {
         this.MySetup = new Setup();
         this.MySnakeFood = new SnakeFood();
         this.MyKeyScanner = new KeyScanner();
@@ -23,16 +25,20 @@ class GameManager {
         this.MyGameOver = new GameOver();
     }
 
-    public void initializeGame() {
+    public void initializeGame()
+    {
         this.MySnakeFood.SetSnakeFood(this.MySetup);
-		this.MySetup.initializeAndStartStopWatch();
+        this.MySetup.initializeAndStartStopWatch();
     }
-    
-    public void PlayGame() {
-        while(!MySetup.GameOver) {
+
+    public void PlayGame()
+    {
+        while (!MySetup.GameOver)
+        {
             this.MyKeyScanner.ScanForKeys(MySetup);
 
-            if (!mySetup.GamePause) {
+            if (!mySetup.GamePause)
+            {
                 if (mySetup.MyStopWatch.ElapsedMilliseconds < 100)
                     continue;
                 mySetup.MyStopWatch.Restart();
@@ -49,62 +55,80 @@ class GameManager {
     }
 
 
-    public Setup MySetup {
-        get {
+    public Setup MySetup
+    {
+        get
+        {
             return this.mySetup;
         }
 
-        private set {
+        private set
+        {
             this.mySetup = value;
         }
     }
 
-    public SnakeFood MySnakeFood {
-        get {
+    public SnakeFood MySnakeFood
+    {
+        get
+        {
             return this.snakeFood;
         }
 
-        private set {
+        private set
+        {
             this.snakeFood = value;
         }
     }
 
-    public KeyScanner MyKeyScanner {
-        get {
+    public KeyScanner MyKeyScanner
+    {
+        get
+        {
             return this.keyScanner;
         }
 
-        private set {
+        private set
+        {
             this.keyScanner = value;
         }
     }
 
-    public DirectionChecker TheDirectionChecker {
-        get {
+    public DirectionChecker TheDirectionChecker
+    {
+        get
+        {
             return this.directionChecker;
         }
 
-        private set {
+        private set
+        {
             this.directionChecker = value;
         }
     }
 
-    public ConfigureConsole TheConfigureConsole {
-        get {
+    public ConfigureConsole TheConfigureConsole
+    {
+        get
+        {
             return this.configureConsole;
         }
 
-        private set {
+        private set
+        {
             this.configureConsole = value;
         }
     }
 
-    public GameOver MyGameOver {
-        get {
+    public GameOver MyGameOver
+    {
+        get
+        {
             return this.gameOver;
         }
 
-        private set {
+        private set
+        {
             this.gameOver = value;
         }
     }

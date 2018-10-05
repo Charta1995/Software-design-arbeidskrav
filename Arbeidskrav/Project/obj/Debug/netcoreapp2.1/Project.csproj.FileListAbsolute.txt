@@ -20,3 +20,14 @@
 /Users/mariusfagerhol/Desktop/Software-design-arbeidskrav/Arbeidskrav/Project/obj/Debug/netcoreapp2.1/Project.AssemblyInfo.cs
 /Users/mariusfagerhol/Desktop/Software-design-arbeidskrav/Arbeidskrav/Project/obj/Debug/netcoreapp2.1/Project.dll
 /Users/mariusfagerhol/Desktop/Software-design-arbeidskrav/Arbeidskrav/Project/obj/Debug/netcoreapp2.1/Project.pdb
+/Users/daniel/Documents/Skole/Swoftwaredesign/Software-design-arbeidskrav/Arbeidskrav/Project/bin/Debug/netcoreapp2.1/Project.deps.json
+/Users/daniel/Documents/Skole/Swoftwaredesign/Software-design-arbeidskrav/Arbeidskrav/Project/bin/Debug/netcoreapp2.1/Project.runtimeconfig.json
+/Users/daniel/Documents/Skole/Swoftwaredesign/Software-design-arbeidskrav/Arbeidskrav/Project/bin/Debug/netcoreapp2.1/Project.runtimeconfig.dev.json
+/Users/daniel/Documents/Skole/Swoftwaredesign/Software-design-arbeidskrav/Arbeidskrav/Project/bin/Debug/netcoreapp2.1/Project.dll
+/Users/daniel/Documents/Skole/Swoftwaredesign/Software-design-arbeidskrav/Arbeidskrav/Project/bin/Debug/netcoreapp2.1/Project.pdb
+/Users/daniel/Documents/Skole/Swoftwaredesign/Software-design-arbeidskrav/Arbeidskrav/Project/obj/Debug/netcoreapp2.1/Project.csprojAssemblyReference.cache
+/Users/daniel/Documents/Skole/Swoftwaredesign/Software-design-arbeidskrav/Arbeidskrav/Project/obj/Debug/netcoreapp2.1/Project.csproj.CoreCompileInputs.cache
+/Users/daniel/Documents/Skole/Swoftwaredesign/Software-design-arbeidskrav/Arbeidskrav/Project/obj/Debug/netcoreapp2.1/Project.AssemblyInfoInputs.cache
+/Users/daniel/Documents/Skole/Swoftwaredesign/Software-design-arbeidskrav/Arbeidskrav/Project/obj/Debug/netcoreapp2.1/Project.AssemblyInfo.cs
+/Users/daniel/Documents/Skole/Swoftwaredesign/Software-design-arbeidskrav/Arbeidskrav/Project/obj/Debug/netcoreapp2.1/Project.dll
+/Users/daniel/Documents/Skole/Swoftwaredesign/Software-design-arbeidskrav/Arbeidskrav/Project/obj/Debug/netcoreapp2.1/Project.pdb
