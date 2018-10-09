@@ -5,8 +5,6 @@ using System.Diagnostics;
 
 class Point
 	{
-		public const string Ok = "Ok";
-
 		public int X; 
 		public int Y;
 		

@@ -2,14 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
-/*
-	Denne klassen sjekker hvilken direksjon slangen tar
- */
+///<remark>
+///Denne klassen sjekker hvilken direksjon slangen tar
+///</remark>
 class DirectionChecker
 {
 
     public DirectionChecker() { }
-
+    ///<remark>
+	///Tar i mot mySetup klassen for å sjekke hvilken direksjon som du valgte ved å klikke på piltastene,
+	///og snur slangen ettersom.
+	///</remark>
     public void SetDirections(Setup mySetup)
     {
         switch (mySetup.NewDirection)

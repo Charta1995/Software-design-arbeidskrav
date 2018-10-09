@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
 
-class Setup {
+class Setup
+{
 
     private bool gameOver;
     private bool gamePause;
@@ -25,16 +26,21 @@ class Setup {
     private Point newSnakeHead;
 
 
-    public Setup() {
+    public Setup()
+    {
         initializeStandardValues();
     }
 
-    private void initializeStandardValues() {
+    ///<summary>
+    ///Initialiserer variabler og oppretter objekter til denne klassen.
+    ///</summary>
+    private void initializeStandardValues()
+    {
         GameOver = false;
         GamePause = false;
         FreeMovementSpace = true;
 
-        NewDirection = (short) Direction.Down;
+        NewDirection = (short)Direction.Down;
         LastDirection = NewDirection;
 
         RandomSpot = new Random();
@@ -44,14 +50,22 @@ class Setup {
         initConsole();
     }
 
-    private void addItemsToSnake() {
+    ///<summary>
+    ///Oppretter slange kroppen
+    ///</summary>
+    private void addItemsToSnake()
+    {
         this.mySnake.Add(new Point(10, 10));
         this.mySnake.Add(new Point(10, 10));
         this.mySnake.Add(new Point(10, 10));
-        this.mySnake.Add(new Point(10, 10));
+
     }
 
-    private void initConsole() {
+    ///<summary>
+    //Konfiguerer spill vinduet og laget slange hodet.
+    ///</summary>
+    private void initConsole()
+    {
         Console.CursorVisible = false;
         Console.Title = "Arbeidskrav";
         Console.ForegroundColor = ConsoleColor.Green;
@@ -59,133 +73,171 @@ class Setup {
         Console.Write("@");
     }
 
-    public void initializeAndStartStopWatch() {
+    public void initializeAndStartStopWatch()
+    {
         this.MyStopWatch = new Stopwatch();
         this.MyStopWatch.Start();
     }
 
-    public void initializeSnakeAttributes() {
+    public void initializeSnakeAttributes()
+    {
         this.MySnakeHead = new Point(this.MySnake.Last());
         this.MySnakeTail = new Point(this.MySnake.First());
         this.MyNewSnakeHead = new Point(this.MySnakeHead);
     }
 
-    public bool GameOver {
-        get {
+    public bool GameOver
+    {
+        get
+        {
             return this.gameOver;
         }
 
-        set {
+        set
+        {
             this.gameOver = value;
         }
     }
 
-    public bool GamePause {
-        get {
-            return this.gamePause; 
+    public bool GamePause
+    {
+        get
+        {
+            return this.gamePause;
         }
 
-        set {
+        set
+        {
             this.gamePause = value;
         }
     }
 
-    public bool FreeMovementSpace {
-        get {
+    public bool FreeMovementSpace
+    {
+        get
+        {
             return this.freeMovementSpace;
         }
 
-        set {
+        set
+        {
             this.freeMovementSpace = value;
         }
     }
 
-    public short NewDirection {
-        get {
+    public short NewDirection
+    {
+        get
+        {
             return this.newDirection;
         }
 
-        set {
+        set
+        {
             this.newDirection = value;
         }
     }
 
-    public short LastDirection {
-        get {
+    public short LastDirection
+    {
+        get
+        {
             return this.lastDirection;
         }
 
-        set {
+        set
+        {
             this.lastDirection = value;
         }
     }
 
-    public Random RandomSpot {
-        get {
+    public Random RandomSpot
+    {
+        get
+        {
             return this.randomSpot;
         }
 
-        set {
+        set
+        {
             this.randomSpot = value;
         }
     }
 
-    public Point AppPoint {
-        get {
+    public Point AppPoint
+    {
+        get
+        {
             return this.appPoint;
         }
 
-        set {
+        set
+        {
             this.appPoint = value;
         }
     }
 
-    public List<Point> MySnake {
-        get {
+    public List<Point> MySnake
+    {
+        get
+        {
             return this.mySnake;
         }
 
-        set {
+        set
+        {
             this.mySnake = value;
         }
     }
 
-    public Stopwatch MyStopWatch {
-        get {
+    public Stopwatch MyStopWatch
+    {
+        get
+        {
             return this.stopwatch;
         }
 
-        private set {
+        private set
+        {
             this.stopwatch = value;
         }
     }
 
-    public Point MySnakeTail {
-        get {
+    public Point MySnakeTail
+    {
+        get
+        {
             return this.snakeTail;
         }
 
-        private set {
+        private set
+        {
             this.snakeTail = value;
         }
     }
 
-    public Point MySnakeHead {
-        get {
+    public Point MySnakeHead
+    {
+        get
+        {
             return this.snakeHead;
         }
 
-        private set {
+        private set
+        {
             this.snakeHead = value;
         }
     }
 
-    public Point MyNewSnakeHead {
-        get {
+    public Point MyNewSnakeHead
+    {
+        get
+        {
             return this.newSnakeHead;
         }
 
-        private set {
+        private set
+        {
             this.newSnakeHead = value;
         }
     }

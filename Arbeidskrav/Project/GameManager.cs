@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
 
+
+///<summary>
+///Denne klassen er en factory klasse der den oppretter alle hovedklassene og bruker metodene deres.
+///Denne klassen har ansvaret for å kjøre spillet og håndtere kallene fra alle klassene.
+///</summary>
+
 class GameManager
 {
     private SnakeFood snakeFood;
@@ -25,11 +31,21 @@ class GameManager
         this.MyGameOver = new GameOver();
     }
 
+
+    ///<summary>
+    ///Setter opp spillet ved å lage å sette slange maten på spillet.
+    ///Oppretter og starter stoppeklokken.
+    ///</summary>
+
     public void initializeGame()
     {
         this.MySnakeFood.SetSnakeFood(this.MySetup);
         this.MySetup.initializeAndStartStopWatch();
     }
+
+    ///<summary>
+    ///Setter i gang og holder spillet gående om premissene stemmer.
+    ///</summary>
 
     public void PlayGame()
     {
